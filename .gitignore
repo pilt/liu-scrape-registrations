@@ -1,0 +1,12 @@
+*.pyc
+*.vim
+.DS_store
+/bin/
+/include/
+/lib/
+/src/
+/share/
+/local
+core
+/*.txt
+/*.p
