@@ -1,4 +1,5 @@
 # coding=utf-8
+__author__ = 'Simon Pantzare'
 
 def summary(dump):
     course_names = dump['course_names']

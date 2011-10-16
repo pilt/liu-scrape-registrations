@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 # coding=utf-8
+__author__ = 'Simon Pantzare'
 import argparse
 import sys
 from collections import defaultdict
@@ -92,6 +93,9 @@ if __name__ == '__main__':
         else:
             out_file = "%s.p" % args.input
         pickle.dump(dump, open(out_file, 'wb'))
+        sys.stderr.write('dump saved in %s\n' % out_file)
+        sys.stderr.flush()
+
         sys.stdout.write('\nSummary:\n')
         sys.stdout.write(distill.summary(dump))
         sys.stdout.flush()

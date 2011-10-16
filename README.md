@@ -1,4 +1,10 @@
-Scrape Linköping University's student portal for course registrations.
+Scrape Linköping University's student portal for course registrations. Uses 
+[Requests](http://docs.python-requests.org/en/latest/index.html) and 
+[pyquery](http://packages.python.org/pyquery/) for scraping.
+
+## Dependencies
+
+Run `pip install -r requirements.txt`.
 
 ## Example
 
@@ -8,6 +14,7 @@ Scrape Linköping University's student portal for course registrations.
     $ ./scrape.py -u abcde123 liu_ids.txt
     Password: 
     no regs for fooba000
+    dump saved in liu_ids.txt.p
 
     Summary:
         1  Multicore- och GPU-Programmering (TDDD56-HT2011)
